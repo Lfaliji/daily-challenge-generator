@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Daily Challenge Generator</title>
   </head>
@@ -18,7 +19,7 @@
         <h1>AI Daily Challenge Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="daily-challenge-generator-form">
           <input
             type="text"
             placeholder="Enter any word to inspire today's challenge... "
@@ -29,23 +30,7 @@
           />
           <input type="Submit" class="submit-button" />
         </form>
-        <div class="daily-challenge">
-          🌼 Example with keyword flower
-          <br />
-          Title: Bloom Where You Are 🌸
-          <br />
-          🌸 Effort & Time: Easy · 15 min
-          <br />
-          Challenge:
-          <br />
-          Find a flower today — in nature, in art, or even in memory. Pause and
-          sketch or photograph it. Then write one line about what it teaches you
-          about resilience.
-          <br />
-          Completion:
-          <br />
-          ✅ You captured beauty and turned it into a personal lesson.
-        </div>
+        <div class="daily-challenge" id="daily-challenge"></div>
       </main>
       <footer>
         This AI project was coded by
