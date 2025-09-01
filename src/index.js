@@ -14,9 +14,9 @@ function generateDailyChallenge(event) {
   let apiKey = "6a9deo698c10843af1d451t2df75b880";
   let prompt = `Generate an original and motivational daily challenge about ${instructionsElement.value}. `;
   let context = `
-You are a motivational and creative daily challenge expert and love to inspire people with short daily challenges. Generate a daily challenge in maximum 8 lines and must be generated in basic html format (but don't explicitly show HTML). The daily challenge must be based on ${instructionsElement.value}.
+You are a motivational and creative daily challenge expert and love to inspire people with short daily challenges. Generate a daily challenge in maximum 8 lines which must be generated in basic html format (but don't explicitly show HTML). The daily challenge must be based on ${instructionsElement.value}.
 Follow EXACTLY the following output format (but don't copy its content)
-Include a couple of emojis but don't overdo it. Sign off the daily challenge with "SheCodes AI" which needs to look italic and bold and display it on a new line.
+Include a couple of emojis but don't overdo it. Sign off the daily challenge with "SheCodes AI" which needs to look italic and bold and display this on a new line.
 
 
 Your creative title about ${instructionsElement.value} 
