@@ -28,6 +28,10 @@ SheCodes AI
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let dailyChallengeElement = document.querySelector("#daily-challenge");
+  dailyChallengeElement.classList.remove("hidden");
+  dailyChallengeElement.innerHTML = `<span class="blink">🎲 Rolling today’s challenge for you about <strong> ${instructionsElement.value}</strong>… <span>`;
+
   console.log("Generating daily challenge");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);

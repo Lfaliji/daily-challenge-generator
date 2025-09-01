@@ -20,19 +20,23 @@
         <h1>AI Daily Challenge Generator</h1>
       </header>
       <main>
-        <form id="daily-challenge-generator-form">
-          <input
-            type="text"
-            placeholder="Enter any word to inspire today's challenge... "
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="instructions"
-          />
-          <input type="Submit" class="submit-button" />
-        </form>
-        <div class="daily-challenge" id="daily-challenge"></div>
+        <div class="form-container">
+          <form id="daily-challenge-generator-form">
+            <input
+              type="text"
+              placeholder="Enter any word or emoji to inspire today's challenge... "
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="instructions"
+            />
+            <input type="Submit" class="submit-button" />
+          </form>
+          <div class="hint">e.g., squats, journaling, Marrakech or 🤷‍♀️</div>
+        </div>
+
+        <div class="daily-challenge hidden" id="daily-challenge"></div>
       </main>
       <footer>
         This AI project was coded by
