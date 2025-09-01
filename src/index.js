@@ -1,5 +1,4 @@
 function displayDailyChallenge(response) {
-  console.log("daily challenge generated");
   new Typewriter("#daily-challenge", {
     strings: response.data.answer,
     autoStart: true,
@@ -31,10 +30,6 @@ SheCodes AI
   let dailyChallengeElement = document.querySelector("#daily-challenge");
   dailyChallengeElement.classList.remove("hidden");
   dailyChallengeElement.innerHTML = `<span class="blink">🎲 Rolling today’s challenge for you about <strong> ${instructionsElement.value}</strong>… <span>`;
-
-  console.log("Generating daily challenge");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
 
   axios.get(apiUrl).then(displayDailyChallenge);
 }
